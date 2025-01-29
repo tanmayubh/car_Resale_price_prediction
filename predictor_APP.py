@@ -4,15 +4,30 @@ import numpy as np
 import os
 import pandas as pd
 
-model_path = os.path.join(os.path.dirname(__file__), 'cars_resale_model')
-model = joblib.load(model_path)
+
 
 import streamlit as st
 import joblib  # Ensure you have joblib for loading models
 import numpy as np
 
 def main():
-    # Title of the Streamlit app
+
+    st.set_page_config(page_title="Car Resale Price Predictor", page_icon="🚗", layout="wide")
+
+    #itle & Subtitle
+    st.title("🚗 Car Resale Price Prediction")
+    st.markdown("#### 📊 Predict the resale price of your car using machine learning!")
+
+    #Sidebar for Navigation
+    st.sidebar.title("🔍 Navigation")
+    st.sidebar.markdown("Use the sidebar to input car details.")
+
+    #Car Selection
+    st.sidebar.subheader("Car Details")
+
+    model_path = os.path.join(os.path.dirname(__file__), 'cars_resale_model')
+    model = joblib.load(model_path)   
+    
     s1 = st.selectbox('Car Name', ("Maruti S PRESSO", "Hyundai Xcent", "Maruti Vitara Brezza", "Tata Tiago",
     "Maruti Swift", "Renault Kwid", "Hyundai Grand i10", "Maruti IGNIS",
     "Honda Brio", "Hyundai Elite i20", "Maruti Baleno", "Honda WR-V",
@@ -261,6 +276,8 @@ def main():
     input_data = np.array([[p1, p2, p3, p4, p5, p6, p7, p8]])
     print(f"Input data shape: {input_data.shape}")
 
+   
+    
     # Predict button
     if st.button("Predict"):
         try:
