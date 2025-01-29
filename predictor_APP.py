@@ -192,7 +192,7 @@ def main():
     p3 = st.number_input("Distance travelled in KMs")
     p4 = st.number_input("Number of last owners")
 
-    s5 = st.selectbox("Fuel type", ("PETROL", "DIESEL", "CNG")
+    s5 = st.selectbox("Fuel type", ("PETROL", "DIESEL", "CNG"))
     if s5 == "PETROL":
           p5 = 0
       elif s5 == "DIESEL":
