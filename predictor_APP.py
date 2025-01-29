@@ -194,11 +194,11 @@ def main():
 
     s5 = st.selectbox("Fuel type", ("PETROL", "DIESEL", "CNG"))
     if s5 == "PETROL":
-          p5 = 0
-      elif s5 == "DIESEL":
-          p5 = 1
+        p5 = 0
+    elif s5 == "DIESEL":
+        p5 = 1
     elif s5 == "CNG":
-          p5 = 2
+        p5 = 2
 
 
     s6 = st.selectbox("Location", ("HR", "TN", "WB", "MH", "UP", "KA", 
@@ -208,53 +208,53 @@ def main():
     if s6 == "HR":
       p6 = 0
     elif s6 == "TN":
-      p6 = 1
+        p6 = 1
     elif s6 == "WB":
-      p6 = 2
+        p6 = 2
     elif s6 == "MH":
-      p6 = 3
+        p6 = 3
     elif s6 == "UP":
-      p6 = 4
+        p6 = 4
     elif s6 == "KA":
-      p6 = 5
+        p6 = 5
     elif s6 == "PB":
-      p6 = 6
+        p6 = 6
     elif s6 == "GJ":
-      p6 = 7
+        p6 = 7
     elif s6 == "DL":
-      p6 = 8
+        p6 = 8
     elif s6 == "CH":
-      p6 = 9
+        p6 = 9
     elif s6 == "TS":
-      p6 = 10
+        p6 = 10
     elif s6 == "KL":
-      p6 = 11
+        p6 = 11
     elif s6 == "RJ":
-      p6 = 12
+        p6 = 12
     elif s6 == "AP":
-      p6 = 13
+        p6 = 13
     elif s6 == "MP":
-      p6 = 14
+        p6 = 14
     elif s6 == "BR":
-      p6 = 15
+        p6 = 15
 
     s7 = st.selectbox("Drive", ("Manual", "Automatic"))
     if s7 == "Manual":
       p7 = 0
     elif s7 == "Automatic":
-      p7 = 1
+        p7 = 1
 
     s8 = st.selectbox("Type", ("HatchBack", "Sedan", "SUV", "Lux_SUV", "Lux_sedan"))
     if s8 == "HatchBack":
       p8 = 0
     elif s8 == "Sedan":
-      p8 = 1
+        p8 = 1
     elif s8 == "SUV":
-      p8 = 2
+        p8 = 2
     elif s8 == "Lux_SUV":
-      p8 = 3
+        p8 = 3
     elif s8 == "Lux_sedan":
-      p8 = 4
+        p8 = 4
 
 
     print(f"Inputs: {p1}, {p2}, {p3}, {p4}, {p5}, {p6}, {p7}, {p8}")
