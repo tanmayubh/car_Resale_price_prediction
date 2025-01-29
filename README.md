@@ -30,7 +30,7 @@ XGBooster
 1. Data Preprocessing
 Handling Missing Values:
 Dropped rows with missing values in Car Name, Year and Location due to low impact.(<5%)
-Slicing the Location, so its defining the Regional Transport State instead of District for braoder view.
+Slicing the Location, so its defining the Regional Transport State instead of District for broader view.
 
 2. Exploratory Data Analysis (EDA)
 Visualized key relationships between categorical features (Car Name, Fuel, Location, Type, Drive) with the target variable (Price) using Facet Grid of Scatterplot and remove outliers as result of minimal entries, large price numbers, lesser trend depicting entries.
