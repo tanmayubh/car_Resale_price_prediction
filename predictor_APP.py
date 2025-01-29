@@ -264,7 +264,7 @@ def main():
     # Predict button
     if st.button("Predict"):
         try:
-            prediction = cars_resale_model.predict(input_data)
+            prediction = model.predict(input_data)
             st.balloons() 
             st.success(f"Best resale price of your car {round(prediction[0], 2)} INR")
         except Exception as e:
