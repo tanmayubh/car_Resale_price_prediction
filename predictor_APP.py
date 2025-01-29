@@ -10,8 +10,9 @@ import streamlit as st
 import joblib  # Ensure you have joblib for loading models
 import numpy as np
 
-def main():
 
+    model_path ='cars_resale_model'
+    model = joblib.load(model_path)
     st.set_page_config(page_title="Car Resale Price Predictor", page_icon="🚗", layout="wide")
 
     #itle & Subtitle
@@ -23,10 +24,7 @@ def main():
     st.sidebar.markdown("Use the sidebar to input car details.")
 
     #Car Selection
-    st.sidebar.subheader("Car Details")
-
-    model_path ='cars_resale_model'
-    model = joblib.load(model_path)   
+    st.sidebar.subheader("Car Details")   
     
     s1 = st.selectbox('Car Name', ("Maruti S PRESSO", "Hyundai Xcent", "Maruti Vitara Brezza", "Tata Tiago",
     "Maruti Swift", "Renault Kwid", "Hyundai Grand i10", "Maruti IGNIS",
