@@ -23,35 +23,36 @@ numpy
 matplotlib
 seaborn
 sklearn
-RandonforestRegressor
+XGBooster
 
 **Steps in the Project**
 
 1. Data Preprocessing
 Handling Missing Values:
 Dropped rows with missing values in Car Name, Year and Location due to low impact.(<5%)
-Created bins for distance column
+Slicing the Location, so its defining the Regional Transport State instead of District for braoder view.
 
 2. Exploratory Data Analysis (EDA)
-Boxplots to identify outliers.
-Visualized key relationships between features and the target variable (Price) using Facet Grid of Scatterplot.
+Visualized key relationships between categorical features (Car Name, Fuel, Location, Type, Drive) with the target variable (Price) using Facet Grid of Scatterplot and remove outliers as result of minimal entries, large price numbers, lesser trend depicting entries.
 Catplot to give business insights
 
-3. Feature Engineering
-Encoding Categorical Features: Car Name, Fuel, Location, Drive, and Type.
-Used OrdinalEncoder for ordinal variables: Year, Owner, and Distance_Binned.
+4. Feature Engineering
+Used all the attributes as a feature of 'Price' variable
+Mapped Categorical Features: Car Name, Fuel, Location, Drive, and Type as integers.
 
-4. Model Development
+
+6. Model Development
 Split the data into training and testing sets (80% train, 20% test).
 Trained the following machine learning models:
 Random Forest Regressor (baseline model).
 
-5. Evaluation
+7. Evaluation
 Used metrics:
-Mean Absolute Error (MAE): Measures average prediction error.
+Mean Absolute Error (MAE): Measure of average prediction error.
 R-squared (R²): Explains the variance in Price captured by the model.
 Achieved:
-MAE: 58,191
-R²: 0.833
+MAE: 60631.31
+R²: 0.838
+
 
 **This predictive tool offers valuable insights for automobile dealers, enabling them to optimize transaction rates and make data-driven decisions in the resale market.**
