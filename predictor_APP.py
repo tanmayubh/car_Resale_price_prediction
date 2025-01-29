@@ -25,7 +25,7 @@ def main():
     #Car Selection
     st.sidebar.subheader("Car Details")
 
-    model_path = os.path.join(os.path.dirname(__file__), 'cars_resale_model')
+    model_path ='cars_resale_model'
     model = joblib.load(model_path)   
     
     s1 = st.selectbox('Car Name', ("Maruti S PRESSO", "Hyundai Xcent", "Maruti Vitara Brezza", "Tata Tiago",
