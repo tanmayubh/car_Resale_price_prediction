@@ -11,8 +11,8 @@ import joblib  # Ensure you have joblib for loading models
 import numpy as np
 
 
-    model_path ='cars_resale_model'
-    model = joblib.load(model_path)
+model_path ='cars_resale_model'
+model = joblib.load(model_path)
     st.set_page_config(page_title="Car Resale Price Predictor", page_icon="🚗", layout="wide")
 
     #itle & Subtitle
