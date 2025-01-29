@@ -5,7 +5,7 @@ import os
 def main():
 
 
-    model_path ='cars_resale_model'
+    model_path =os.path.join(os.path.dirname(__file__), 'cars_resale_model')
     model = joblib.load(model_path)
     
     st.set_page_config(page_title="Car Resale Price Predictor", page_icon="🚗", layout="wide")
