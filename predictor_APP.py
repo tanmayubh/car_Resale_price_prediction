@@ -4,8 +4,8 @@ import numpy as np
 import os
 import pandas as pd
 
-# model_path = os.path.join(os.path.dirname(__file__), 'cars_resale_model')
-# model = joblib.load(model_path)
+model_path = os.path.join(os.path.dirname(__file__), 'cars_resale_model')
+model = joblib.load(model_path)
 
 import streamlit as st
 import joblib  # Ensure you have joblib for loading models
